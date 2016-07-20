@@ -11,20 +11,20 @@ https://www.codewars.com/kata/regex-validate-pin-code/javascript
 
 function validatePIN (pin) {
 	
-//all valid pins will be either 4 or 6 in length	
-if (pin.length === 4 || pin.length === 6){
+	//all valid pins will be either 4 or 6 in length	
+	if (pin.length === 4 || pin.length === 6){
 	
-//test if input is a not a number or a float; if not return true.
-  	if (isNaN(pin)){
-  		return false;
-  	} else if (!pin%1 === 0){
-		return false;
-	} else {
-		return true;
-	}
+		//test if input is a not a number or a float; if not return true.
+  		if (isNaN(pin)){
+  			return false;
+  		} else if (!pin%1 === 0){
+			return false;
+		} else {
+			return true;
+		}
     
-} else {
-	return false;
+	} else {
+		return false;
 	}
 }
 
