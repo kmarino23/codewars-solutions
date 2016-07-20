@@ -23,3 +23,6 @@ function countSheeps(arrayOfSheep) {
     //length of shell array is number of truths in input array
      return trueSheep.length;  
 }
+
+
+countSheeps([true,  true,  true,  false, true,  true,  true,  true , true,  false,]); //8
